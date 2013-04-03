@@ -11,4 +11,4 @@ Change permission for the file to be able to execute it:
 
 for each query:
 
-   <i> ./urban <query string></i>
+   <i> ./urban <b>query_string</b></i>
