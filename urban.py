@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from dictionary import urban_diction
 import sys
 
