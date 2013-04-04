@@ -1,22 +1,16 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from dictionary import urban_diction
 import sys
 
-if len(sys.argv) < 2:
-  print "Use the correct syntax. ./urban <query string>"
-  sys.exit(0)
-not_first = 1
-search_word = ""
-space = ""
-for word in sys.argv:
-  if not_first > 1:
-    search_word += space + word
-    space = " "
-  not_first +=1
+def main():
+  if len(sys.argv) < 2:
+    print "Use the correct syntax. ./urban <query string>"
+    sys.exit(0)
+  query = " ".join(sys.argv[1:])
+  urban = urban_diction()
+  urban.search(query)
 
-query = search_word
+if __name__ == "__main__":
+  main()
 
-urban = urban_diction()
-
-urban.search(query)

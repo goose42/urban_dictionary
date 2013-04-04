@@ -13,5 +13,5 @@ class urban_diction:
       return
     for res in search_map["list"]:
       print res["definition"]
-      print "\n"
+      print "\n*****"
 
